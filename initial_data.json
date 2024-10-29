@@ -1,0 +1,235 @@
+[
+  {
+    "model": "library.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Іван",
+      "last_name": "Франко",
+      "email": "franko@example.com",
+     "image": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/image00001_8_37.jpg"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Леся",
+      "last_name": "Українка",
+      "email": "ukrainka@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Тарас",
+      "last_name": "Шевченко",
+      "email": "shevchenko@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Ольга",
+      "last_name": "Кобилянська",
+      "email": "kobylianska@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 5,
+    "fields": {
+      "first_name": "Микола",
+      "last_name": "Гоголь",
+      "email": "gogol@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 6,
+    "fields": {
+      "first_name": "Василь",
+      "last_name": "Стефаник",
+      "email": "stefanyk@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 7,
+    "fields": {
+      "first_name": "Ірина",
+      "last_name": "Вільде",
+      "email": "vilde@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 8,
+    "fields": {
+      "first_name": "Юрій",
+      "last_name": "Яновський",
+      "email": "yanovsky@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 9,
+    "fields": {
+      "first_name": "Семен",
+      "last_name": "Панін",
+      "email": "panin@example.com"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 10,
+    "fields": {
+      "first_name": "Ліна",
+      "last_name": "Костенко",
+      "email": "kostenko@example.com"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 1,
+    "fields": {
+      "title": "Каменярі",
+      "author": 1,
+      "description": "Повість про каменяра і становлення його духовного життя",
+      "rental_fee": "15.99",
+      "late_fee_multiplier": "2.00",
+      "image": "books/kamenyari.jpg",
+      "pages": 300,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "Лісова пісня",
+      "author": 2,
+      "description": "Лірична поема про красу природи та життя лісових мешканців",
+      "rental_fee": "12.99",
+      "late_fee_multiplier": "1.50",
+      "image": "books/lisova_pisnya.jpg",
+      "pages": 200,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "Кобзар",
+      "author": 3,
+      "description": "Збірка поезій Тараса Шевченка, яка стала символом української літератури.",
+      "rental_fee": "10.99",
+      "late_fee_multiplier": "1.75",
+      "image": "books/kobzar.jpg",
+      "pages": 250,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "Земля",
+      "author": 4,
+      "description": "Роман, що розкриває життя українського села та боротьбу за землю.",
+      "rental_fee": "14.50",
+      "late_fee_multiplier": "2.25",
+      "image": "books/zemlya.jpg",
+      "pages": 280,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 5,
+    "fields": {
+      "title": "Тарас Бульба",
+      "author": 5,
+      "description": "Повість про українського козака Тараса Бульбу та його синів.",
+      "rental_fee": "11.99",
+      "late_fee_multiplier": "1.50",
+      "image": "books/taras_bulba.jpg",
+      "pages": 180,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 6,
+    "fields": {
+      "title": "Тіні забутих предків",
+      "author": 6,
+      "description": "Повість про кохання, традиції та віру гуцулів.",
+      "rental_fee": "13.00",
+      "late_fee_multiplier": "1.75",
+      "image": "books/tini_zabutih_predkiv.jpg",
+      "pages": 220,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 7,
+    "fields": {
+      "title": "Микола Джеря",
+      "author": 7,
+      "description": "Роман, що відображає життя і боротьбу українського народу.",
+      "rental_fee": "12.50",
+      "late_fee_multiplier": "2.00",
+      "image": "books/mykola_dzheria.jpg",
+      "pages": 250,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 8,
+    "fields": {
+      "title": "Вершники",
+      "author": 8,
+      "description": "Роман про долю українського народу в умовах війни.",
+      "rental_fee": "15.00",
+      "late_fee_multiplier": "2.50",
+      "image": "books/vershnyky.jpg",
+      "pages": 300,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 9,
+    "fields": {
+      "title": "Національна ідея в Україні",
+      "author": 9,
+      "description": "Книга про формування національної свідомості в Україні.",
+      "rental_fee": "10.00",
+      "late_fee_multiplier": "1.50",
+      "image": "books/natsionalna_ideya.jpg",
+      "pages": 240,
+      "language": "українська"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 10,
+    "fields": {
+      "title": "Записки українського самашедшого",
+      "author": 10,
+      "description": "Психологічний роман про важкі часи та кризи особистості.",
+      "rental_fee": "14.00",
+      "late_fee_multiplier": "2.25",
+      "image": "books/zapiski_ukrayinskogo_samashedshoho.jpg",
+      "pages": 290,
+      "language": "українська"
+    }
+  }
+]
+
+

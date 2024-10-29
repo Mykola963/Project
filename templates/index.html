@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Welcome to BookSpace UA
+      </h1>
+      <h2 class="subtitle">
+        The online library where you can rent books for a specified period of time.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      {% for book in books %}
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://readeat.com/storage/app/uploads/public/65c/2a1/f22/thumb_54547_900_900_0_0_auto.jpg" alt="{{ book.title }}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">{{ book.title }}</p>
+            <p class="subtitle is-6">{{ book.author.name }}</p>
+            <p>{{ book.description }}</p>
+            <div class="content">
+              <p>
+                <strong>ISBN:</strong> {{ book.isbn }}
+                <br>
+                <strong>Pages:</strong> {{ book.pages }}
+                <br>
+                <strong>Language:</strong> {{ book.language }}
+                <br>
+                <strong>Available:</strong> {{ book.available }}
+                <br>
+                <strong>Price per day:</strong> ${{ book.price }}
+              </p>
+            </div>
+            <div class="buttons is-right">
+              <a class="button is-link is-outlined" href="">View Details</a>
+              {% if book.available %}
+              <a class="button is-link" href="#">Rent Now</a>
+              {% else %}
+              <a class="button is-danger" href="#">Not Available</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
